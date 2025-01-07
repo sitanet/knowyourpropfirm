@@ -1,0 +1,404 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Know Your Prop Firm</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/logo/favicon.png'%}">
+  
+   <!-- CSS here -->
+   <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/animate.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/slick.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/font-awesome-pro.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/spacing.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/custom-animation.css'%}">
+   <link rel="stylesheet" href="{% static 'assets/css/main.css'%}">
+</head>
+
+<body>
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+   <!-- pre loader area start -->
+<!--    <div id="loading">
+      <div id="loading-center">
+         <div id="loading-center-absolute">
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_one"></div>
+         </div>
+      </div>
+   </div> -->
+   <!-- pre loader area end -->
+
+   <!-- back to top start -->
+   <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+               stroke-linejoin="round" />
+         </svg>
+      </button>
+   </div>
+   <!-- back to top end -->
+
+   <!-- search popup start -->
+   <div class="search__popup">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-12">
+               <div class="search__wrapper">
+                  <div class="search__top d-flex justify-content-between align-items-center">
+                     <div class="search__logo">
+                        <a href="index.html">
+                           <img src="{% static 'assets/img/logo/footer-logo.png'%}" alt="">
+                        </a>
+                     </div>
+                     <div class="search__close">
+                        <button type="button" class="search__close-btn search-close-btn">
+                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>                                 
+                        </button>
+                     </div>
+                  </div>
+                  <div class="search__form">
+                     <form action="#">
+                        <div class="search__input">
+                           <input class="search-input-field" type="text" placeholder="Type here to search...">
+                           <span class="search-focus-border"></span>
+                           <button type="submit">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 <path d="M19.0002 19.0002L17.2002 17.2002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg> 
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- search popup end -->
+
+   <!-- tp-offcanvus-area-start -->
+   <div class="tpoffcanvas-area">
+      <div class="tpoffcanvas">
+         <div class="tpoffcanvas__close-btn">
+            <button class="close-btn"><i class="fal fa-times"></i></button>
+         </div>
+         <div class="tpoffcanvas__logo">
+            <a href="index.html">
+               <img src="{% static 'assets/img/logo/footer-logo.png'%}" alt="">
+            </a>
+         </div>
+         <div class="tpoffcanvas__title">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima incidunt eaque ab cumque, porro maxime autem sed.</p>
+         </div>
+         <div class="tp-main-menu-mobile d-xl-none"></div>
+         <div class="tpoffcanvas__contact-info">
+            <div class="tpoffcanvas__contact-title">
+               <h5>Contact us</h5>
+            </div>
+            <ul>
+               <li>
+                  <i class="fa-light fa-location-dot"></i>
+                  <a href="https://www.google.com/maps/@23.8223586,90.3661283,15z" target="_blank">Melbone st, Australia, Ny 12099</a>
+               </li>
+               <li>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:solaredge@gmail.com">themepure@gmail.com</a>
+               </li>
+               <li>
+                  <i class="fal fa-phone-alt"></i>
+                  <a href="tel:+48555223224">+48 555 223 224</a>
+               </li>
+            </ul>
+         </div>
+         <div class="tpoffcanvas__input">
+            <div class="tpoffcanvas__input-title">
+               <h4>Get UPdate</h4>
+            </div>
+            <form action="#">
+               <div class="p-relative">
+                  <input type="text" placeholder="Enter mail">
+                  <button>
+                     <i class="fas fa-paper-plane"></i>
+                  </button>
+               </div>
+            </form>
+         </div>
+         <div class="tpoffcanvas__social">
+            <div class="social-icon">
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
+
+   <header>
+      <!-- header top area start -->
+     
+      <!-- header top area end -->
+
+      <!-- header main area end -->
+    
+      <!-- header main area end -->
+
+   </header>
+
+
+   <main>
+
+      <!-- hero area start -->
+      <div class="tp-hero__area tp-hero__mt">
+         <div class="tp-hero__slider-active p-relative">
+            <div class="tp-hero__bg tp-hero__overlay d-flex align-items-center" data-background="{% static 'assets/img/hero/kyf.png'%}">
+               <div class="tp-hero__shape-1 z-index">
+                  <img src="{% static 'assets/img/hero/shape-img-1.png'%}" alt="">
+               </div>
+               <div class="tp-hero__shape-2 z-index">
+                  <img src="{% static 'assets/img/hero/glob-img.png'%}" alt="">
+               </div>
+               <div class="tp-hero__shape-3 z-index">
+                  <img src="{% static 'assets/img/hero/circle-img.png'%}" alt="">
+               </div>
+               <div class="container z-index">
+                  <div class="row">
+                     <div class="col-xl-7 col-lg-9">
+                        <div class="tp-hero__section-title-box">
+                           <!-- <h4 class="tp-hero__subtitle subtitle-border">Do You know Your Prop Firm</h4> -->
+                           <h3 class="tp-hero__title p-relative">
+                              Are you Ready? <br> Discover reliable Propfirms
+                              <span class="tp-hero__title-shape d-none d-md-block">
+                                 <svg width="292" height="6" viewBox="0 0 292 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M1.26459 5.06768C97.2309 3.06405 192.646 2.7456 288.544 5.99651C291.896 6.11593 291.85 3.1304 288.544 2.98444C193.266 -1.1555 96.3353 -1.27492 1.26459 4.44403C0.575675 4.48384 0.552711 5.08095 1.26459 5.06768Z"
+                                       fill="#FFB302" />
+                                 </svg>
+                              </span>
+                           </h3>
+                        </div>
+                        <div class="tp-hero__info-box d-flex align-items-center">
+                          <!--  <div class="tp-hero__info-price">
+                              <span>99<em>%</em><em>/ Trusted Prop Firm</em></span>
+                           </div> -->
+                           <div class="tp-hero__bonus d-flex align-items-center">
+                            <!--   <svg width="31" height="32" viewBox="0 0 31 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"> -->
+                                 <path
+                                    d="M27.9943 17.8753H25.7506L30.5039 6.05709C30.6954 5.58121 30.4885 5.03002 30.0419 4.82609C29.5953 4.62215 29.078 4.84259 28.8866 5.31846L23.8362 17.8753H7.40009L2.34969 5.31846C2.1583 4.84259 1.64114 4.62202 1.19442 4.82609C0.747827 5.03002 0.540952 5.58115 0.732342 6.05709L5.48566 17.8753H3.242C1.7866 17.8753 0.602539 19.137 0.602539 20.6878V26.3128C0.602539 27.8636 1.7866 29.1253 3.242 29.1253H4.18047V30.1253C4.18047 30.643 4.5744 31.0628 5.0603 31.0628C5.54619 31.0628 5.94012 30.643 5.94012 30.1253V29.1253H25.2962V30.1253C25.2962 30.643 25.6901 31.0628 26.176 31.0628C26.6619 31.0628 27.0558 30.643 27.0558 30.1253V29.1253H27.9943C29.4497 29.1253 30.6337 27.8636 30.6337 26.3128V20.6878C30.6337 19.137 29.4497 17.8753 27.9943 17.8753ZM28.8741 26.3128C28.8741 26.8297 28.4794 27.2503 27.9943 27.2503H3.242C2.75687 27.2503 2.36218 26.8297 2.36218 26.3128V20.6878C2.36218 20.1708 2.75687 19.7503 3.242 19.7503H27.9943C28.4794 19.7503 28.8741 20.1708 28.8741 20.6878V26.3128Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M13.7557 12.0748C13.4121 12.4409 13.4121 13.0345 13.7557 13.4006C14.0993 13.7668 14.6564 13.7668 15 13.4006C15.0966 13.2977 15.3055 13.125 15.6186 13.125C15.9317 13.125 16.1405 13.2977 16.2371 13.4006C16.5807 13.7668 17.1378 13.7668 17.4814 13.4006C17.825 13.0345 17.825 12.4409 17.4814 12.0748C17.1923 11.7668 16.5658 11.25 15.6186 11.25C14.6713 11.25 14.0449 11.7668 13.7557 12.0748Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M7.53046 5.44906C9.69189 3.14431 12.5643 1.875 15.6187 1.875C18.6731 1.875 21.5455 3.14431 23.707 5.44906C24.0502 5.81519 24.6073 5.81569 24.9512 5.44956C25.2949 5.08362 25.2951 4.49 24.9517 4.12375C22.4579 1.4645 19.1434 0 15.6187 0C12.094 0 8.77957 1.4645 6.28581 4.12369C5.94233 4.48994 5.9425 5.0835 6.28628 5.4495C6.62993 5.8155 7.18709 5.81525 7.53046 5.44906Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M22.4604 8.10006C22.8041 7.73419 22.8044 7.14056 22.4611 6.77425C20.6327 4.82406 18.2025 3.75 15.618 3.75C13.0335 3.75 10.6033 4.82406 8.77493 6.77425C8.43157 7.14056 8.4318 7.73412 8.77558 8.10006C9.11935 8.466 9.67646 8.46569 10.0198 8.09937C11.5157 6.50375 13.5039 5.625 15.6179 5.625C17.732 5.625 19.7201 6.50375 21.2161 8.09937C21.5594 8.4655 22.1164 8.46625 22.4604 8.10006Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M19.9709 10.7498C20.3145 10.3836 20.3145 9.79006 19.9709 9.42394C18.8066 8.18325 17.2606 7.5 15.6177 7.5C13.9748 7.5 12.4288 8.18325 11.2645 9.42394C10.9209 9.79006 10.9209 10.3836 11.2645 10.7498C11.6081 11.1159 12.1652 11.1159 12.5088 10.7498C13.3407 9.86325 14.4448 9.375 15.6177 9.375C16.7906 9.375 17.8947 9.86325 18.7267 10.7498C19.0702 11.1159 19.6273 11.1159 19.9709 10.7498Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M19.1376 21.625C18.6517 21.625 18.2578 22.0447 18.2578 22.5625V24.4375C18.2578 24.9553 18.6517 25.375 19.1376 25.375C19.6235 25.375 20.0175 24.9553 20.0175 24.4375V22.5625C20.0175 22.0447 19.6235 21.625 19.1376 21.625Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M22.6572 21.625C22.1713 21.625 21.7773 22.0447 21.7773 22.5625V24.4375C21.7773 24.9553 22.1713 25.375 22.6572 25.375C23.1431 25.375 23.537 24.9553 23.537 24.4375V22.5625C23.537 22.0447 23.1431 21.625 22.6572 21.625Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M26.1757 21.625C25.6898 21.625 25.2959 22.0447 25.2959 22.5625V24.4375C25.2959 24.9553 25.6898 25.375 26.1757 25.375C26.6616 25.375 27.0555 24.9553 27.0555 24.4375V22.5625C27.0555 22.0447 26.6616 21.625 26.1757 21.625Z"
+                                    fill="#EDB62C" />
+                              </svg>
+                              <!-- <span>Subscribed & get 1month WIFi Free</span> -->
+                           </div>
+                        </div>
+                        <div class="tp-hero__btn-box">
+                           <a class="tp-btn" href="{% url 'kyp' %}">What to Expect</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="tp-hero__bg tp-hero__overlay d-flex align-items-center" data-background="{% static 'assets/img/hero/kyf.png'%}">
+               <div class="tp-hero__shape-1 z-index">
+                  <img src="{% static 'assets/img/hero/shape-img-1.png'%}" alt="">
+               </div>
+               <div class="tp-hero__shape-2 z-index">
+                  <img src="{% static 'assets/img/hero/glob-img.png'%}" alt="">
+               </div>
+               <div class="tp-hero__shape-3 z-index">
+                  <img src="{% static 'assets/img/hero/circle-img.png'%}" alt="">
+               </div>
+               <div class="container z-index">
+                  <div class="row">
+                     <div class="col-xl-7 col-lg-9">
+                        <div class="tp-hero__section-title-box">
+                           <!-- <h4 class="tp-hero__subtitle subtitle-border">Do You know Your Prop Firm</h4> -->
+                           <h3 class="tp-hero__title p-relative">
+                              <!-- Get Fast Internet <br> Solution -->
+                              Get Ready!<br> Exciting !
+                              <span class="tp-hero__title-shape d-none d-md-block">
+                                 <svg width="292" height="6" viewBox="0 0 292 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M1.26459 5.06768C97.2309 3.06405 192.646 2.7456 288.544 5.99651C291.896 6.11593 291.85 3.1304 288.544 2.98444C193.266 -1.1555 96.3353 -1.27492 1.26459 4.44403C0.575675 4.48384 0.552711 5.08095 1.26459 5.06768Z"
+                                       fill="#FFB302" />
+                                 </svg>
+                              </span>
+                           </h3>
+                        </div>
+                        <div class="tp-hero__info-box d-flex align-items-center">
+                          <!--  <div class="tp-hero__info-price">
+                              <span>99<em>%</em><em>/ Trusted Prop Firm</em></span>
+                           </div> -->
+                           <div class="tp-hero__bonus d-flex align-items-center">
+                              <!-- <svg width="31" height="32" viewBox="0 0 31 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"> -->
+                                 <path
+                                    d="M27.9943 17.8753H25.7506L30.5039 6.05709C30.6954 5.58121 30.4885 5.03002 30.0419 4.82609C29.5953 4.62215 29.078 4.84259 28.8866 5.31846L23.8362 17.8753H7.40009L2.34969 5.31846C2.1583 4.84259 1.64114 4.62202 1.19442 4.82609C0.747827 5.03002 0.540952 5.58115 0.732342 6.05709L5.48566 17.8753H3.242C1.7866 17.8753 0.602539 19.137 0.602539 20.6878V26.3128C0.602539 27.8636 1.7866 29.1253 3.242 29.1253H4.18047V30.1253C4.18047 30.643 4.5744 31.0628 5.0603 31.0628C5.54619 31.0628 5.94012 30.643 5.94012 30.1253V29.1253H25.2962V30.1253C25.2962 30.643 25.6901 31.0628 26.176 31.0628C26.6619 31.0628 27.0558 30.643 27.0558 30.1253V29.1253H27.9943C29.4497 29.1253 30.6337 27.8636 30.6337 26.3128V20.6878C30.6337 19.137 29.4497 17.8753 27.9943 17.8753ZM28.8741 26.3128C28.8741 26.8297 28.4794 27.2503 27.9943 27.2503H3.242C2.75687 27.2503 2.36218 26.8297 2.36218 26.3128V20.6878C2.36218 20.1708 2.75687 19.7503 3.242 19.7503H27.9943C28.4794 19.7503 28.8741 20.1708 28.8741 20.6878V26.3128Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M13.7557 12.0748C13.4121 12.4409 13.4121 13.0345 13.7557 13.4006C14.0993 13.7668 14.6564 13.7668 15 13.4006C15.0966 13.2977 15.3055 13.125 15.6186 13.125C15.9317 13.125 16.1405 13.2977 16.2371 13.4006C16.5807 13.7668 17.1378 13.7668 17.4814 13.4006C17.825 13.0345 17.825 12.4409 17.4814 12.0748C17.1923 11.7668 16.5658 11.25 15.6186 11.25C14.6713 11.25 14.0449 11.7668 13.7557 12.0748Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M7.53046 5.44906C9.69189 3.14431 12.5643 1.875 15.6187 1.875C18.6731 1.875 21.5455 3.14431 23.707 5.44906C24.0502 5.81519 24.6073 5.81569 24.9512 5.44956C25.2949 5.08362 25.2951 4.49 24.9517 4.12375C22.4579 1.4645 19.1434 0 15.6187 0C12.094 0 8.77957 1.4645 6.28581 4.12369C5.94233 4.48994 5.9425 5.0835 6.28628 5.4495C6.62993 5.8155 7.18709 5.81525 7.53046 5.44906Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M22.4604 8.10006C22.8041 7.73419 22.8044 7.14056 22.4611 6.77425C20.6327 4.82406 18.2025 3.75 15.618 3.75C13.0335 3.75 10.6033 4.82406 8.77493 6.77425C8.43157 7.14056 8.4318 7.73412 8.77558 8.10006C9.11935 8.466 9.67646 8.46569 10.0198 8.09937C11.5157 6.50375 13.5039 5.625 15.6179 5.625C17.732 5.625 19.7201 6.50375 21.2161 8.09937C21.5594 8.4655 22.1164 8.46625 22.4604 8.10006Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M19.9709 10.7498C20.3145 10.3836 20.3145 9.79006 19.9709 9.42394C18.8066 8.18325 17.2606 7.5 15.6177 7.5C13.9748 7.5 12.4288 8.18325 11.2645 9.42394C10.9209 9.79006 10.9209 10.3836 11.2645 10.7498C11.6081 11.1159 12.1652 11.1159 12.5088 10.7498C13.3407 9.86325 14.4448 9.375 15.6177 9.375C16.7906 9.375 17.8947 9.86325 18.7267 10.7498C19.0702 11.1159 19.6273 11.1159 19.9709 10.7498Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M19.1376 21.625C18.6517 21.625 18.2578 22.0447 18.2578 22.5625V24.4375C18.2578 24.9553 18.6517 25.375 19.1376 25.375C19.6235 25.375 20.0175 24.9553 20.0175 24.4375V22.5625C20.0175 22.0447 19.6235 21.625 19.1376 21.625Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M22.6572 21.625C22.1713 21.625 21.7773 22.0447 21.7773 22.5625V24.4375C21.7773 24.9553 22.1713 25.375 22.6572 25.375C23.1431 25.375 23.537 24.9553 23.537 24.4375V22.5625C23.537 22.0447 23.1431 21.625 22.6572 21.625Z"
+                                    fill="#EDB62C" />
+                                 <path
+                                    d="M26.1757 21.625C25.6898 21.625 25.2959 22.0447 25.2959 22.5625V24.4375C25.2959 24.9553 25.6898 25.375 26.1757 25.375C26.6616 25.375 27.0555 24.9553 27.0555 24.4375V22.5625C27.0555 22.0447 26.6616 21.625 26.1757 21.625Z"
+                                    fill="#EDB62C" />
+                              </svg>
+                              <!-- <span>Subscribed & get 1month WIFi Free</span> -->
+                           </div>
+                        </div>
+                        <div class="tp-hero__btn-box">
+                           <a class="tp-btn" href="{% url 'kyp' %}">What to Expect</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="tp-hero__bg tp-hero__overlay d-flex align-items-center" data-background="{% static 'assets/img/hero/kyf.png'%}">
+               <div class="tp-hero__shape-1 z-index">
+                  <img src="{% static 'assets/img/hero/shape-img-1.png'%}" alt="">
+               </div>
+               <div class="tp-hero__shape-2 z-index">
+                  <img src="{% static 'assets/img/hero/glob-img.png'%}" alt="">
+               </div>
+               <div class="tp-hero__shape-3 z-index">
+                  <img src="{% static 'assets/img/hero/circle-img.png'%}" alt="">
+               </div>
+               <div class="container z-index">
+                  <div class="row">
+                     <div class="col-xl-7 col-lg-9">
+                        <div class="tp-hero__section-title-box">
+                           <!-- <h4 class="tp-hero__subtitle subtitle-border">Do You know Your Prop Firm</h4> -->
+                           <h3 class="tp-hero__title p-relative">
+                              <!-- Get Fast Internet <br> Solution -->
+                              Get excited! <br> This is Big!
+                              <span class="tp-hero__title-shape d-none d-md-block">
+                                 <svg width="292" height="6" viewBox="0 0 292 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M1.26459 5.06768C97.2309 3.06405 192.646 2.7456 288.544 5.99651C291.896 6.11593 291.85 3.1304 288.544 2.98444C193.266 -1.1555 96.3353 -1.27492 1.26459 4.44403C0.575675 4.48384 0.552711 5.08095 1.26459 5.06768Z"
+                                       fill="#FFB302" />
+                                 </svg>
+                              </span>
+                           </h3>
+                        </div>
+                        <div class="tp-hero__info-box d-flex align-items-center">
+                        <!--    <div class="tp-hero__info-price">
+                              <span>99<em>%</em><em>/ Trusted Prop Firm</em></span>
+
+                           </div> -->
+                        <div class="tp-hero__btn-box">
+                           <a class="tp-btn" href="{% url 'kyp' %}">What to Expect</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- hero area end -->
+
+
+    
+
+    
+
+     
+
+     
+
+     
+   
+
+   
+   
+
+
+
+    
+
+   </main>
+
+   <!-- JS here -->
+   <script src="{% static 'assets/js/vendor/jquery.js'%}"></script>
+   <script src="{% static 'assets/js/vendor/waypoints.js'%}"></script>
+   <script src="{% static 'assets/js/bootstrap-bundle.js'%}"></script>
+   <script src="{% static 'assets/js/meanmenu.js'%}"></script>
+   <script src="{% static 'assets/js/gsap.min.js'%}"></script>
+   <script src="{% static 'assets/js/ScrollTrigger.min.js'%}"></script>
+   <script src="{% static 'assets/js/split-text.min.js'%}"></script>
+   <script src="{% static 'assets/js/swiper-bundle.js'%}"></script>
+   <script src="{% static 'assets/js/slick.js'%}"></script>
+   <script src="{% static 'assets/js/range-slider.js'%}"></script>
+   <script src="{% static 'assets/js/magnific-popup.js'%}"></script>
+   <script src="{% static 'assets/js/nice-select.js'%}"></script>
+   <script src="{% static 'assets/js/purecounter.js'%}"></script>
+   <script src="{% static 'assets/js/countdown.js'%}"></script>
+   <script src="{% static 'assets/js/jequery-knob.js'%}"></script>
+   <script src="{% static 'assets/js/jequery-appear.js'%}"></script>
+   <script src="{% static 'assets/js/wow.js'%}"></script>
+   <script src="{% static 'assets/js/isotope-pkgd.js'%}"></script>
+   <script src="{% static 'assets/js/imagesloaded-pkgd.js'%}"></script>
+   <script src="{% static 'assets/js/ajax-form.js'%}"></script>
+   <script src="{% static 'assets/js/main.js'%}"></script>
+</body>
+
+</html>

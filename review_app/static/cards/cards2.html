@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Scrolling Product Cards</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1abc9c;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2.5em;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    /* Section Styles */
+    section {
+      background-color: #ecf0f1;
+      border-radius: 15px;
+      padding: 30px 20px;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden; /* Hides overflowing content */
+      position: relative;
+    }
+
+    /* Scrolling Effect */
+    .product-list {
+      display: flex;
+      gap: 20px;
+      animation: scroll 20s linear infinite; /* Smooth scrolling */
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Product Card Styles */
+    .product-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 230px;
+      flex-shrink: 0; /* Prevents cards from shrinking */
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product-name {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .product-description {
+      font-size: 0.9em;
+      color: #7f8c8d;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.2em;
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    .product-rating {
+      font-size: 1em;
+      color: #f39c12;
+      margin: 10px 0;
+    }
+
+    .buy-now-btn {
+      background-color: #2c3e50;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .buy-now-btn:hover {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">PRODUCTS</h1>
+    <section>
+      <div class="product-list">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <img src="iphone.jpg" alt="iPhone" class="product-image">
+          <h2 class="product-name">iPhone</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$249.99</div>
+          <div class="product-rating">★★★☆☆</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <img src="earphone.jpg" alt="Earphone" class="product-image">
+          <h2 class="product-name">Earphone</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$99.99</div>
+          <div class="product-rating">★★★★☆</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <img src="laptop.jpg" alt="Laptop" class="product-image">
+          <h2 class="product-name">Laptop</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$499.99</div>
+          <div class="product-rating">★☆☆☆☆</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+          <img src="watch.jpg" alt="Watch" class="product-image">
+          <h2 class="product-name">Watch</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$199.99</div>
+          <div class="product-rating">★★★★★</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+          <img src="tablet.jpg" alt="Tablet" class="product-image">
+          <h2 class="product-name">Tablet</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$299.99</div>
+          <div class="product-rating">★★★☆☆</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+          <img src="camera.jpg" alt="Camera" class="product-image">
+          <h2 class="product-name">Camera</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$599.99</div>
+          <div class="product-rating">★★★☆☆</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="product-card">
+          <img src="headphones.jpg" alt="Headphones" class="product-image">
+          <h2 class="product-name">Headphones</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$49.99</div>
+          <div class="product-rating">★★★★☆</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="product-card">
+          <img src="smartwatch.jpg" alt="Smartwatch" class="product-image">
+          <h2 class="product-name">Smartwatch</h2>
+          <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
+          <div class="product-price">$159.99</div>
+          <div class="product-rating">★★★☆☆</div>
+          <button class="buy-now-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Propfirm</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+            flex: 1;
+        }
+
+        .left-content, .right-content {
+            width: 45%;
+        }
+
+        .right-content {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Glowing shadow */
+            padding: 25px;
+        }
+
+        .right-content h1 {
+            color: #ff6600;
+            text-decoration: underline;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .right-content p {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .right-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .right-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .right-content ul li strong {
+            color: #ff6600;
+        }
+
+        .left-content {
+            text-align: center;
+        }
+
+        .logo {
+            width: 140px;
+            margin-bottom: 15px;
+        }
+
+        .left-content h1 {
+            font-size: 2.5rem;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+
+        .left-content p a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .loading-bar {
+            width: 80%;
+            height: 15px;
+            background: #333;
+            border-radius: 10px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress {
+            width: 70%;
+            height: 100%;
+            background: #ff6600;
+            animation: loading 2.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100%); }
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+
+        .footer {
+            background: #111;
+            padding: 20px 10px;
+            text-align: center;
+            color: #ccc;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        /* Add responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-content, .right-content {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .left-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-content">
+            <img src="{% static 'assets/img/hero/kyp.png'%}" alt="Know Your Propfirm Logo" class="logo">
+            <h1 style="color: white;">KNOW YOUR PROPFRIM</h1>
+
+            <p><a href="mailto:admin@knowyourpropfirm.com">admin@knowyourpropfirm.com</a></p>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+            <p>Loading...</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1EF1gueGNB/?mibextid=kFxxJD" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'assets/img/hero/facebook.png'%}" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/know_your_propfirm/profilecard/?igsh=MXJldHl2c2d4dmMwaw==" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'assets/img/hero/instagram.png'%}" alt="Instagram">
+                </a>
+                <a href="https://x.com/Know_Y_Propfirm?t=hG6-BtCBW6w3x4Gm-f-68w&s=09" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'assets/img/hero/twitter.png'%}" alt="X (Twitter)">
+                </a>
+                <a href="https://discord.gg/b84UYcrx" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'assets/img/hero/discord.png'%}" alt="Discord">
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-content">
+            <h1>Who we are?</h1>
+            <p>
+                We are dedicated to helping traders and propfirms build trusted partnerships. 
+                Our platform offers insights into propfirms in their various categories, detailed payout data, 
+                honest reviews, and a streamlined dispute resolution system.
+            </p>
+            <h1>What to expect?</h1>
+            <ul>
+                <li><strong>Prop Firm Insight:</strong> Explore detailed information about propfirms.</li>
+                <li><strong>Payout Insight:</strong> See how much propfirms have paid to their traders.</li>
+                <li><strong>Conduct Reviews:</strong> Share and read honest reviews from real traders.</li>
+                <li><strong>Initiate Disputes:</strong> Resolve issues quickly and fairly.</li>
+            </ul>
+            <p>Thank you for your patience while we enhance your experience!</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Know Your Propfirm. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
