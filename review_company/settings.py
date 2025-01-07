@@ -119,8 +119,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = '/home/bayo/knowyourpropfirm/static'
-# STATIC_ROOT = BASE_DIR/'static'
+
+STATIC_ROOT = BASE_DIR/'static'
 
 MEDIA_URL = 'img/'
 MEDIA_ROOT =  BASE_DIR/'media'
